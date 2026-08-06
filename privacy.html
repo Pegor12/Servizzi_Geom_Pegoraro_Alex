@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Pegoraro Alex — Geometra</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy:    #0C2340;
+      --navy-mid:#1A3A5C;
+      --accent:  #2E6DB4;
+      --accent-l:#EBF2FA;
+      --gold:    #C6993A;
+      --text:    #1C2B3A;
+      --muted:   #5A6B7A;
+      --line:    #DDE4EC;
+      --bg:      #F7F9FC;
+      --white:   #FFFFFF;
+      --radius:  14px;
+      --sans:    'DM Sans', sans-serif;
+      --serif:   'DM Serif Display', serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+    /* ── NAVBAR (coerente con index) ── */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.1rem 0;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 36px; height: 36px;
+      background: var(--navy);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-mark svg { width: 20px; height: 20px; fill: none; stroke: #fff; stroke-width: 1.8; }
+    .logo-name {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .logo-role {
+      font-size: .72rem;
+      font-weight: 500;
+      color: var(--muted);
+      display: block;
+      letter-spacing: .04em;
+    }
+    .back-link {
+      font-size: .9rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .back-link:hover { color: var(--navy); }
+
+    /* ── HERO ── */
+    .p-hero {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .p-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      color: var(--navy);
+      margin-bottom: .8rem;
+    }
+    .p-hero .updated {
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    /* ── CONTENT ── */
+    .p-content { padding: 3rem 0 5rem; }
+    .p-content h2 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      color: var(--navy);
+      margin-top: 2.6rem;
+      margin-bottom: 1rem;
+    }
+    .p-content h2:first-child { margin-top: 0; }
+    .p-content p {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .p-content ul {
+      margin: 0 0 1rem 1.3rem;
+    }
+    .p-content li { margin-bottom: .5rem; }
+    .p-content a { color: var(--accent); }
+    .info-box {
+      background: var(--accent-l);
+      border: 1px solid #C7DCEF;
+      border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .info-box p { margin-bottom: .4rem; }
+    .info-box p:last-child { margin-bottom: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,.75);
+      padding: 2.2rem 0;
+      font-size: .85rem;
+    }
+    footer a { color: rgba(255,255,255,.9); }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 640px) {
+      .p-content { padding: 2rem 0 3.5rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <div class="logo-name">Pegoraro Alex</div>
+        <span class="logo-role">Geometra — Vicenza</span>
+      </div>
+    </a>
+    <a href="index.html" class="back-link">&larr; Torna al sito</a>
+  </div>
+</nav>
+
+<section class="p-hero">
+  <div class="container">
+    <div class="label">Informativa</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Ultimo aggiornamento: 6 agosto 2026</p>
+  </div>
+</section>
+
+<section class="p-content">
+  <div class="container">
+
+    <h2>1. Titolare del trattamento</h2>
+    <div class="info-box">
+      <p><strong>Alex Pegoraro</strong></p>
+      <p>Via Maddalena 11, Monte di Malo (VI)</p>
+      <p>P.IVA 04505080244</p>
+      <p>Email: <a href="mailto:pegoraroalexgeom@gmail.com">pegoraroalexgeom@gmail.com</a></p>
+      <p>PEC: <a href="mailto:alex.pegoraro@geopec.it">alex.pegoraro@geopec.it</a></p>
+    </div>
+    <p>
+      Il presente sito web (<a href="https://geom-pegoraro.github.io/" target="_blank" rel="noopener noreferrer">geom-pegoraro.github.io</a>)
+      è gestito direttamente dal titolare sopra indicato, che è responsabile del trattamento dei dati
+      personali raccolti tramite questo sito, ai sensi del Regolamento (UE) 2016/679 (GDPR) e della
+      normativa italiana applicabile in materia di protezione dei dati personali.
+    </p>
+
+    <h2>2. Dati raccolti</h2>
+    <p>Questo sito è di natura vetrina/informativa e non utilizza moduli di raccolta dati automatizzati, cookie di profilazione o sistemi di tracciamento degli utenti. I dati personali vengono raccolti esclusivamente quando l'utente sceglie volontariamente di contattare il titolare, in particolare:</p>
+    <ul>
+      <li><strong>Indirizzo email</strong>, quando l'utente scrive tramite il link "Scrivi una email" o invia una comunicazione via posta elettronica;</li>
+      <li><strong>Numero di telefono</strong>, quando l'utente contatta il titolare tramite WhatsApp o telefonicamente;</li>
+      <li>Eventuali altri dati personali che l'utente decida spontaneamente di fornire nel contenuto del proprio messaggio (es. nome, indirizzo dell'immobile, descrizione della richiesta).</li>
+    </ul>
+    <p>Il sito non raccoglie in autonomia dati sensibili né effettua profilazione degli utenti.</p>
+
+    <h2>3. Finalità del trattamento</h2>
+    <p>I dati personali forniti dall'utente tramite i canali di contatto (email, WhatsApp, telefono) sono trattati esclusivamente per le seguenti finalità:</p>
+    <ul>
+      <li>Rispondere a richieste di informazioni o di consulenza professionale;</li>
+      <li>Gestire i rapporti precontrattuali e, ove instaurato un incarico, l'esecuzione dello stesso;</li>
+      <li>Adempiere a eventuali obblighi di legge connessi all'attività professionale svolta.</li>
+    </ul>
+
+    <h2>4. Base giuridica del trattamento</h2>
+    <p>Il trattamento dei dati personali si fonda sulle seguenti basi giuridiche, ai sensi dell'art. 6 del GDPR:</p>
+    <ul>
+      <li><strong>Esecuzione di misure precontrattuali</strong> adottate su richiesta dell'interessato (art. 6, par. 1, lett. b), quando l'utente richiede informazioni o una consulenza;</li>
+      <li><strong>Consenso dell'interessato</strong> (art. 6, par. 1, lett. a), espresso in modo implicito nel momento in cui l'utente invia volontariamente i propri dati tramite email, WhatsApp o telefono;</li>
+      <li><strong>Adempimento di obblighi legali</strong> (art. 6, par. 1, lett. c), qualora applicabile in relazione all'attività professionale del titolare.</li>
+    </ul>
+
+    <h2>5. Modalità e durata del trattamento</h2>
+    <p>
+      Il trattamento è effettuato con strumenti manuali e informatici, con modalità e logiche strettamente
+      correlate alle finalità sopra indicate e, comunque, in modo da garantire la sicurezza e la riservatezza
+      dei dati. I dati personali sono conservati per il tempo necessario a rispondere alla richiesta
+      dell'utente e, in caso di successivo incarico professionale, per la durata dello stesso e per il periodo
+      previsto dagli obblighi di legge in materia fiscale, contabile e professionale.
+    </p>
+
+    <h2>6. Servizi di terze parti — Google Fonts</h2>
+    <p>
+      Questo sito utilizza <strong>Google Fonts</strong>, un servizio di visualizzazione dei caratteri
+      tipografici fornito da Google LLC. Per il corretto funzionamento del servizio, al momento della
+      visita del sito il browser dell'utente si connette ai server di Google e trasmette automaticamente
+      l'<strong>indirizzo IP</strong> del dispositivo utilizzato, insieme ad altri dati tecnici relativi
+      alla connessione (es. browser, versione, lingua). Questo trattamento è effettuato da Google in
+      qualità di autonomo titolare del trattamento, secondo la propria informativa privacy, consultabile
+      all'indirizzo <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.
+    </p>
+    <p>
+      Il presente sito non utilizza, oltre a Google Fonts, ulteriori servizi di terze parti, plugin
+      di social network o strumenti di analisi/tracciamento del traffico.
+    </p>
+
+    <h2>7. Comunicazione e diffusione dei dati</h2>
+    <p>
+      I dati personali raccolti non sono oggetto di diffusione. Potranno essere comunicati a soggetti terzi
+      esclusivamente qualora ciò sia necessario per l'esecuzione dell'incarico professionale (es. consulenti,
+      collaboratori tecnici, uffici pubblici competenti) o per l'adempimento di obblighi di legge.
+    </p>
+
+    <h2>8. Diritti dell'interessato</h2>
+    <p>In qualità di interessato, l'utente ha il diritto di richiedere in qualsiasi momento al titolare del trattamento:</p>
+    <ul>
+      <li><strong>Accesso</strong> ai propri dati personali (art. 15 GDPR);</li>
+      <li><strong>Rettifica</strong> dei dati inesatti o incompleti (art. 16 GDPR);</li>
+      <li><strong>Cancellazione</strong> dei dati, nei casi previsti dalla legge (art. 17 GDPR);</li>
+      <li><strong>Limitazione</strong> del trattamento (art. 18 GDPR);</li>
+      <li><strong>Portabilità</strong> dei dati, ove applicabile (art. 20 GDPR);</li>
+      <li><strong>Opposizione</strong> al trattamento (art. 21 GDPR);</li>
+      <li><strong>Revoca del consenso</strong> in qualsiasi momento, senza pregiudicare la liceità del trattamento effettuato prima della revoca.</li>
+    </ul>
+    <p>
+      Le richieste possono essere inviate al titolare del trattamento scrivendo a
+      <a href="mailto:pegoraroalexgeom@gmail.com">pegoraroalexgeom@gmail.com</a> oppure via PEC a
+      <a href="mailto:alex.pegoraro@geopec.it">alex.pegoraro@geopec.it</a>.
+      L'interessato ha inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali
+      (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer">www.garanteprivacy.it</a>),
+      qualora ritenga che il trattamento dei propri dati sia avvenuto in violazione della normativa vigente.
+    </p>
+
+    <h2>9. Modifiche alla presente informativa</h2>
+    <p>
+      Il titolare si riserva il diritto di modificare o aggiornare, in tutto o in parte, la presente
+      informativa privacy, anche a seguito di eventuali modifiche normative. Si invita l'utente a
+      consultare periodicamente questa pagina per rimanere aggiornato.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <strong>Pegoraro Alex</strong> · Geometra &middot; Via Maddalena 11, Monte di Malo (VI) &middot; P.IVA 04505080244
+      </div>
+      <div>
+        <a href="index.html">Torna al sito</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
